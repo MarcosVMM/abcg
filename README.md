@@ -1,8 +1,9 @@
 Projeto de Computação Gráfica - UFABC
 
 Alunos:
-Giovanni Almeida de Sousa - RA 11095414
-Aluno Marcos Vincius Macedo Moreira - RA 11064016;
+Giovanni Almeida de Sousa - RA 11095414;
+
+Marcos Vincius Macedo Moreira - RA 11064016;
 
 Game Asteroids
 
