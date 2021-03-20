@@ -7,6 +7,9 @@
 #include <stdio.h>
 #include <iostream>
 
+using std::cout; using std::endl;
+using std::copy; using std::string;
+
 
 void OpenGLWindow::handleEvent(SDL_Event &event) {
   // Keyboard events
@@ -193,7 +196,13 @@ void OpenGLWindow::paintUI(){
       std::string s = std::to_string(usuario.getVida());
       char const *pchar = s.c_str();  //use char const* as target type
       strcpy(str_life, "Vidas: "); strcat(str_life, pchar);
-      ImGui::Text(str_life);
+      ImGui::Text("%s",str_life);
+
+      /*string string1("Vidas: ");
+      std::string s = std::to_string(usuario.getVida());
+      char const *pchar = s.c_str(); 
+      string1 += pchar;
+      ImGui::Text(string1.c_str());*/
 
 //Velocidade
      
@@ -206,7 +215,15 @@ void OpenGLWindow::paintUI(){
       char const *pchar1 = s1.c_str();  //use char const* as target type
       strcpy(str_veloc, "Velocidade: "); strcat(str_veloc, pchar1);
       strcat(str_veloc, " km/h");
-      ImGui::Text(str_veloc);
+      ImGui::Text("%s",str_veloc);
+
+      /*string string3("Velocidade: ");
+      string string4(" km/h");
+      std::string s1 = std::to_string(velocidade);
+      char const *pchar1 = s1.c_str(); 
+      string3 += pchar1;
+      string3 += string4;
+      ImGui::Text(string3.c_str());*/
   
 
 
@@ -299,7 +316,13 @@ void OpenGLWindow::paintUI(){
         std::string sf = std::to_string(usuario.getFase());
         char const *pchar = sf.c_str();  //use char const* as target type
         strcpy(str_fase, "Fase: "); strcat(str_fase, pchar);
-        ImGui::Text(str_fase);
+        ImGui::Text("%s",str_fase);
+
+        /*string string5("Fase: ");
+        std::string sf = std::to_string(usuario.getFase());
+        char const *pchar = sf.c_str(); 
+        string5 += pchar;
+        ImGui::Text(string5.c_str());*/
          
     }
     ImGui::PopFont();
