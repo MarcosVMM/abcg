@@ -2,40 +2,35 @@ Projeto de Computação Gráfica - UFABC
 
 Alunos:
 Giovanni Almeida de Sousa - RA 11095414;
-
 Marcos Vinicius Macedo Moreira - RA 11064016;
 
-Game Asteroids
+Animal's House - Primeiros passos na lingua inglesa
 
 Descrição da Aplicação:
-A aplicação é uma readaptação do clássico game Asteroids de 1979, cujo o objetivo do jogador é destruir os asteroides que surgem na tela e evitar que os mesmos o atinjam, até que não reste mais elementos na tela. A readapatação apresenta dificuldade progressiva, novos elementos gráficos (como cenários coloridos, visual repaginado da nave e asteroides coloridos) e inclusão de novas ferramentas de controle das partidas (como um menu inicial e o menu de pause).
+Aplicação desenvolvida para auxiliar jovens e crianças no aprendizado da lingua inglesa, inserindo, visualmente, o vocabulário dos animais. São incluídos 10 objetos animados dos animais e seus respectivos nomes em inglês, para que a criança assosie a imagem à nomenclatura usada na lingua. Os animais são urso (bear), passáro (bird), gato (cat), dog (cachorro), elefante (elephant), cavalo (horse), canguru (kangaroo), macaco (monkey), porco (pig) e coelho (rabbit). Todos eles foram animados, iluminados e texturizados utilizando as técnicas fornecidas em aula.
 
-Updates:
+Detalhes importantes:
 
-- Estados do jogo:
-	- Menu: Opções para iniciar ou sair do jogo;
-	- Pause: Ativado e desativado com a tecla 'p', abre o menu com 3 opções (Continuar, Reiniciar e Sair)
-- Fases: O jogo possui 5 fases;
-- Vidas: O jogador possui 3 vidas extras; 
-- Dificuldade escalável: Para cada fase há um fator de escalabilidade para as seguintes variáveis:
-	- Aceleração da nave (para frente);
-	- Aceleração da nave (para trás);
-	- Velocidade Angular dos Asteroids;
-- Nave: 
-	- Formato alterado;
-	- Cor alterada para amarela, cinza e vermelha;
-- Tiros: 
-	- Inserção de mais 2 canhões na nave;
-	- Cor alterada para amarela;
-
-- Asteroids: 
-	- Coloração alterada para pseudo-aleatória.
-	- Velocidade angular escalável.
-
-- Display:	
-	- Vida: mostra o número de vidas restantes do jogador;
-	- Velocidade: mostra a velocidade atual da nave.
-
-- Background: 
-	- A cor de fundo muda para cada fase;
-	- As estrelas no fundo foram alteradas para a cor roxa;
+- Personagens:
+	- Urso(bear): utilizado o método blinnphong no shader, objeto animado para o movimento de pulo;
+	- Pássaro(bird): utilizado o método normalmapping no shader, objeto animado para o movimento de pulo;
+	- Gato(cat): utilizado o método normalmapping no shader, objeto animado para o movimento de pulo;
+	- Cachorro(dog): utilizado o método blinnphong no shader, objeto animado para o movimento de pulo;
+	- Elefante(elephant): utilizado o método blinnphong no shader, objeto animado para o movimento de pulo;
+	- Cavalo(horse): utilizado o método normalmapping no shader, objeto animado para o movimento de pulo;
+	- Canguru(kangaroo): utilizado o método normalmapping no shader, objeto animado para o movimento de pulo;
+	- Macaco(monkey): utilizado o método normalmapping no shader, objeto animado para o movimento de pulo;
+	- Porco(pig): utilizado o método blinnphong no shader, objeto animado para o movimento de pulo;
+	- Coelho(rabbit): utilizado o método blinnphong no shader, objeto animado para o movimento de pulo.
+- Funcionamento:
+	- A criança deve selecionar o animal, o mesmo é carregado lentamente para estimular o raciocínio da criança;
+	- São carregados os shaders relacionados a cada objeto; 
+	- Carregado o objeto;
+	- Alterado para o Mapping Mode adequado;
+	- Novo animal é selecionado, recomeça o ciclo.
+- Extras:
+	- Animais foram animados com base em técnicas de camera;
+	- Iluminação do cenário realizada para todos os objetos.
+- Controles:
+	- Camera: pode ser ajustada manualmente (pelo mouse)
+	- Seleção de animais.
